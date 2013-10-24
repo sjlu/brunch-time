@@ -2,7 +2,7 @@
 
 Inspried by other [skeletons](https://github.com/brunch/brunch/wiki/Skeletons) but includes a very minimalistic application structure and allows you to import more as you like.
 
-As other Brunch users like to say, this is a **Javascript**, **LESS**, **Backbone**, **Handlebars** skeleton.
+As other Brunch users like to say, this is a **Javascript**, **LESS**, **Backbone**, **Handlebars**, **Bower** skeleton.
 
 Brunch Time uses the following [plugins](https://github.com/brunch/brunch/wiki/Plugins):
 * [Javascript](https://github.com/brunch/javascript-brunch)
@@ -45,3 +45,11 @@ And has the following [Bower](http://bower.io) packages installed:
         bower install
 
 * If load order matters, you'll need to modify [config.coffee](config.coffee) in the `order:before` section.
+
+### Notes
+
+More documentation or information about Brunch can be found [here](http://brunch.io/#deploying) which incldues things like how to deploy, examples, other skeletons and plugins.
+
+### License
+
+MIT.
