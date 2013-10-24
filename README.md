@@ -44,7 +44,11 @@ And has the following [Bower](http://bower.io) packages installed:
 
         bower install
 
-* If load order matters, you'll need to modify [config.coffee](config.coffee) in the `order:before` section.
+* If load order matters, you'll need to modify [config.coffee](config.coffee) in the `javascripts:order:before` section.
+
+### Adding LESS Files
+
+All you need to do is add the LESS file into the [app/styles](app/styles) directory. Again, if order matters you'll need to specify this in [config.coffee](config.coffee) in the `stylesheets:order:before` section.
 
 ### Notes
 

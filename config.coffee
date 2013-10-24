@@ -2,6 +2,7 @@ exports.config =
 
   paths:
     public: 'public'
+    vendor: '/bower_components(\/|\\)/'
 
   files:
     javascripts:
@@ -21,7 +22,12 @@ exports.config =
       defaltExtension: 'less'
 
       joinTo:
-        'css/styles.css': /^(bower_components|app[\\/]styles[\\/]main.less)/
+        'css/styles.css': /^(bower_components|app)/
+
+      order:
+        before: [
+          'bower_components/lesshat/lesshat.less'
+        ]
 
     templates:
       defaultExtension: 'hbs'

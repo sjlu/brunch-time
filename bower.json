@@ -29,7 +29,7 @@
       "main": "dist/lodash.underscore.js"
     },
     "lesshat": {
-      "main": "lesshat.css"
+      "main": "lesshat.less"
     }
   }
 }
