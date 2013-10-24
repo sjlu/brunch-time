@@ -1,0 +1,35 @@
+{
+  "name": "brunch-time",
+  "version": "0.0.0",
+  "authors": [
+    "Steven Lu <tacticalazn@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.10.2",
+    "lodash": "2.2.1",
+    "normalize-css": "2.1.3",
+    "backbone": "1.1.0",
+    "lesshat": "1.1.2",
+    "html5shiv": "3.7.0"
+  },
+  "overrides": {
+    "backbone": {
+      "main": "backbone.js"
+    },
+    "lodash": {
+      "main": "dist/lodash.underscore.js"
+    },
+    "lesshat": {
+      "main": "lesshat.css"
+    }
+  }
+}

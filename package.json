@@ -1,0 +1,25 @@
+{
+  "author": "Steven Lu",
+  "name": "brunch-time",
+  "description": "",
+  "version": "0.0.0",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": "~0.10.21"
+  },
+  "scripts": {
+    "start": "brunch watch --server"
+  },
+  "dependencies": {
+    "css-brunch": ">=1.7.0",
+    "clean-css-brunch": ">=1.7.1",
+    "less-brunch": ">=1.7.0",
+    "javascript-brunch": ">=1.7.0",
+    "uglify-js-brunch": ">=1.7.0",
+    "handlebars-brunch": ">=1.7.0"
+  }
+}
