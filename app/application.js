@@ -15,7 +15,7 @@ var Application = {
      * You will also need to specify your routes
      * to that view in the router.
      */
-    var Router = require('lib/router');
+    var Router = require('router');
     this.router = new Router();
 
     if (typeof Object.freeze === 'function') {

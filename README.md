@@ -19,6 +19,10 @@ And has the following [Bower](http://bower.io) packages installed:
 * [backbone](https://github.com/jashkenas/backbone)
 * [lodash](https://github.com/lodash/lodash)
 * [jquery](https://github.com/jquery/jquery)
+* [mocha](https://github.com/visionmedia/mocha)
+* [chai](https://github.com/chaijs/chai)
+* [sinon](https://github.com/cjohansen/Sinon.JS)
+* [sinon-chai](https://github.com/domenic/sinon-chai)
 
 ### Install
 
@@ -35,6 +39,8 @@ And has the following [Bower](http://bower.io) packages installed:
 
         brunch watch --server
 
+    * Go to (localhost:3333)[http://localhost:3333/] to view your site and (localhost:3333/test.html)[http://localhost:3333/test.html] to run your tests.
+
 ### Adding Bower Packages
 
 * Make sure you add the Bower package you want in [bower.json](bower.json) in the `dependencies` section.
@@ -46,9 +52,17 @@ And has the following [Bower](http://bower.io) packages installed:
 
 * If load order matters, you'll need to modify [config.coffee](config.coffee) in the `javascripts:order:before` section.
 
+### Adding Views
+
+You will need add your view controller into [app/views](app/views) and the appropriate HTML file into [app/views/templates](app/views/templates). Then add the proper instance in [app/application.js](app/application.js) and the route in [app/router.js](app/router.js).
+
 ### Adding LESS Files
 
 All you need to do is add the LESS file into the [app/styles](app/styles) directory. Again, if order matters you'll need to specify this in [config.coffee](config.coffee) in the `stylesheets:order:before` section.
+
+### Adding Tests
+
+Add your test accordingly in [test](test) and add the test to [test/all.js](test/all.js).
 
 ### Notes
 
