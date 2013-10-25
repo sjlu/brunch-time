@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/tests-vendor.css" />
+  </head>
+  <body>
+    <div id="mocha"></div>
+
+    <script src="js/vendor.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/tests-vendor.js"></script>
+    <script type="text/javascript">
+      mocha.ui('tdd');
+      mocha.reporter('html');
+      expect = chai.expect;
+      assert = chai.assert;
+    </script>
+    <script src="js/tests.js"></script>
+    <script>
+      require('test/all');
+
+      // way to detect if a jQuery-selector returns an empty object
+      $.fn.exists = function () {
+          return this.length !== 0;
+      };
+
+      $(function() {
+        if (window.mochaPhantomJS) {
+          mochaPhantomJS.run();
+        } else {
+          mocha.run();
+        }
+      });
+    </script>
+  </body>
+</html>

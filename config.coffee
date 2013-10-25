@@ -2,7 +2,6 @@ exports.config =
 
   paths:
     public: 'public'
-    vendor: '/bower_components(\/|\\)/'
 
   files:
     javascripts:
@@ -10,8 +9,10 @@ exports.config =
 
       joinTo:
         'js/app.js': /^app/
-        'js/html5shiv.js': /^bower_components[\\/]html5shiv[\\/]src[\\/]html5shiv.js/
-        'js/vendor.js': /^bower_components[\\/](?!html5shiv)/
+        'js/html5shiv.js': /^bower_components[\\/](?=html5shiv)/
+        'js/vendor.js': /^bower_components[\\/](?!html5shiv|mocha|chai|sinon|sinon-chai)/
+        'js/tests.js': /^test/
+        'js/tests-vendor.js': /^bower_components[\\/](?=mocha|chai|sinon|sinon-chai)/
 
       order:
         before: [
@@ -22,7 +23,8 @@ exports.config =
       defaltExtension: 'less'
 
       joinTo:
-        'css/styles.css': /^(bower_components|app)/
+        'css/styles.css': /^(bower_components[\\/](?!mocha|chai|sinon|sinon-chai)|app)/
+        'css/tests-vendor.css': /^(bower_components[\\/](?=mocha|chai|sinon|sinon-chai))/
 
       order:
         before: [
